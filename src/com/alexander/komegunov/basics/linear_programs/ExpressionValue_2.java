@@ -6,6 +6,6 @@ public class ExpressionValue_2 {
     }
 
     public static void main(String[] args) {
-        System.out.println(calculate(1,2,3));
+        System.out.println(calculate(1, 2, 3));
     }
 }

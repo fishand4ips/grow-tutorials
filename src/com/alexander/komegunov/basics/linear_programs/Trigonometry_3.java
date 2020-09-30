@@ -6,6 +6,6 @@ public class Trigonometry_3 {
     }
 
     public static void main(String[] args) {
-        System.out.println(calculate(1,0.5));
+        System.out.println(calculate(1, 0.5));
     }
 }

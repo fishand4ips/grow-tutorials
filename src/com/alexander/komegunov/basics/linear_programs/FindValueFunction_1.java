@@ -6,6 +6,6 @@ public class FindValueFunction_1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(calculate(1,2,3));
+        System.out.println(calculate(1, 2, 3));
     }
 }
