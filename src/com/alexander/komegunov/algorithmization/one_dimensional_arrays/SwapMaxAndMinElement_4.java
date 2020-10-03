@@ -2,6 +2,11 @@ package com.alexander.komegunov.algorithmization.one_dimensional_arrays;
 
 import java.util.Arrays;
 
+/**
+ * Даны действительные числа а1 ,а2 ,..., аn.
+ * Поменять местами наибольший и наименьший элементы.
+ */
+
 public class SwapMaxAndMinElement_4 {
 
     public static void swap(byte[] seq) {
