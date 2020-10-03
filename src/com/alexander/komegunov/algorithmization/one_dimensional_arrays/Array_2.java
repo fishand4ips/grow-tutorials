@@ -2,6 +2,12 @@ package com.alexander.komegunov.algorithmization.one_dimensional_arrays;
 
 import java.util.Arrays;
 
+/**
+ * Дана последовательность действительных чисел а1 ,а2 ,..., аn.
+ * Заменить все ее члены, большие данного Z, этим числом.
+ * Подсчитать количество замен.
+ */
+
 public class Array_2 {
 
     public static int compute(byte[] array) {
