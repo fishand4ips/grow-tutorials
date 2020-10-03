@@ -18,6 +18,6 @@ public class SumElArrays_1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(sumElements(new byte[] {1,3,5,6,7,8}));
+        System.out.println(sumElements(new byte[]{1, 3, 5, 6, 7, 8}));
     }
 }

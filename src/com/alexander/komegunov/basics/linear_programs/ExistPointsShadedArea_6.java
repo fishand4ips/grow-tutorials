@@ -1,5 +1,10 @@
 package com.alexander.komegunov.basics.linear_programs;
 
+/**
+ * Для данной области составить линейную программу, которая печатает true, если точка с координатами (х, у) принадлежит закрашенной области,
+ * и false в противном случае.
+ */
+
 public class ExistPointsShadedArea_6 {
     public static boolean exist(int x, int y) {
         boolean flag = false;

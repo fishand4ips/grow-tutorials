@@ -1,5 +1,10 @@
 package com.alexander.komegunov.basics.linear_programs;
 
+/**
+ * Вычислить значение выражения по формуле
+ * (все переменные принимают действительные значения)
+ */
+
 public class ExpressionValue_2 {
     public static double calculate(double a, double b, double c) {
         return ((b + Math.sqrt(Math.pow(b, 2) + 4 * a * c)) / (2 * a)) - Math.pow(a, 3) * c + 1 / Math.pow(b, 2);

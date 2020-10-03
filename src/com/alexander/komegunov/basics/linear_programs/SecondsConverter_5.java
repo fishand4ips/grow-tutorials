@@ -2,6 +2,11 @@ package com.alexander.komegunov.basics.linear_programs;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Дано натуральное число Т, которое представляет длительность прошедшего времени в секундах. Вывести данное значение длительности в часах, минутах
+ * и секундах в следующей форме: HHч MMмин SSс.
+ */
+
 public class SecondsConverter_5 {
     public static String converter(int t) {
         long hours = TimeUnit.SECONDS.toHours(t);

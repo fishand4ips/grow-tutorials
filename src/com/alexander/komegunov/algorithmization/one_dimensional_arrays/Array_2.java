@@ -9,7 +9,6 @@ import java.util.Arrays;
  */
 
 public class Array_2 {
-
     public static int compute(byte[] array) {
         double z = Math.random() * 10;
         int counter = 0;
