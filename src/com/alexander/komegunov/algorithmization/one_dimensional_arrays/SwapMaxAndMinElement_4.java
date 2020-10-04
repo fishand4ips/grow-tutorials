@@ -11,11 +11,13 @@ public class SwapMaxAndMinElement_4 {
 
     public static void swap(double[] seq) {
         System.out.println("Исходный массив: " + Arrays.toString(seq));
-        changer(seq,
+        changer(
+                seq,
                 findMinPosition(seq),
                 findMaxPosition(seq),
                 findMinValue(seq),
-                findMaxValue(seq));
+                findMaxValue(seq)
+        );
         System.out.println("После перестановки max и min элементов: " + Arrays.toString(seq));
     }
 
