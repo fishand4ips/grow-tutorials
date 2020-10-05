@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="154px" height="50px" viewBox="0 0 154 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Grow digital platform_logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-grow-others_freelance" transform="translate(-374.000000, -54.000000)">
+            <g id="Grow-digital-platform_logo" transform="translate(368.000000, 49.000000)">
+                <g id="Group-10" transform="translate(0.000000, 2.000000)" fill="#9BC837">
+                    <g id="logo">
+                        <path d="M33.3870327,42.7358047 C33.3790977,38.9549909 32.5227645,35.2241558 30.8811576,31.8183163 C33.1672983,24.7446749 36.9343887,18.1616732 40.4772295,14.8445869 C33.8159663,19.851822 29.9946949,23.7107192 27.7341397,27.6237975 C25.9100225,25.937273 23.7020345,24.7211747 21.301641,24.0809566 C23.6615282,16.8899228 30.4055681,9.63266765 45.851692,3 C45.851692,3.00301006 55.652448,27.1482079 33.3870327,42.7358047 Z M14.6223174,31.8875477 C23.0775765,38.0491409 25.350172,45.5908468 25.6421478,49.6559331 C11.9237985,46.2605852 8.29366587,37.8218814 6,25.8072261 C34.5594512,21.0844417 30.4401838,48.7574301 30.4401838,48.7574301 C26.7649003,38.7279095 23.7081841,35.4439338 14.6223174,31.8905578 L14.6223174,31.8875477 Z" id="Grow.svg"></path>
+                    </g>
+                </g>
+                <text id="GROW" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="30" font-weight="500" letter-spacing="0.1333334">
+                    <tspan x="62" y="30" fill="#525462">GROW</tspan>
+                    <tspan x="143.233334" y="30" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#A8A9B4"> </tspan>
+                </text>
+                <text id="Digital-Platform" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="15" font-weight="normal" letter-spacing="0.0666667074" fill="#525462">
+                    <tspan x="62" y="51">Digital Platform</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
