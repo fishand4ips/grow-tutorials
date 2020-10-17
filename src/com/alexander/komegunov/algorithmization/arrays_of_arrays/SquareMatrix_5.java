@@ -1,6 +1,5 @@
 package com.alexander.komegunov.algorithmization.arrays_of_arrays;
 
-
 import java.util.Arrays;
 
 /**
