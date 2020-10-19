@@ -1,7 +1,6 @@
 package com.alexander.komegunov.algorithmization.one_arrays_sorts;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 /**
