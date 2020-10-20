@@ -4,35 +4,32 @@ import java.util.Arrays;
 
 /**
  * СОРТИРОВКА ВСТАВКАМИ:
- * Просто и незатейливо — проходим по массиву в поисках максимального элемента.
- * Найденный максимум меняем местами с последним элементом.
- * Неотсортированная часть массива уменьшилась на один элемент (не включает последний элемент,
- * куда мы переставили найденный максимум). К этой неотсортированной
- * части применяем те же действия — находим максимум и ставим его на последнее место в неотсортированной части массива.
- * И так продолжаем до тех пор, пока неотсортированная часть массива не уменьшится до одного элемента.
+ * это сортировка сравнения на месте. Он зацикливается и находит первое наименьшее значение,
+ * заменяет его первым элементом; зациклите и снова найдите второе наименьшее значение,
+ * поменяйте его местами со вторым элементом, повторите третье, четвертое, пятое наименьшее
+ * значение и поменяйте местами, пока все не будет в правильном порядке
  */
 
 public class SelectionSort {
     public static void main(String[] args) {
-        sort(new int[]{1, 1, 6, 1, 2, 4, 3, 2, 4, 12, 2, 2, 7});
+        final int[] ints = {1, 1, 6, 1, 2, 4, 3, 2, 4, 12, 2, 2, 7};
+        System.out.println("before: " + Arrays.toString(ints));
+        sort(ints);
+        System.out.println("after: " + Arrays.toString(ints));
+
     }
 
     static void sort(int[] sequence) {
-        System.out.println("before " + Arrays.toString(sequence));
-        int maxVal = sequence[0], maxPos = 0, lastPos, tmp;
-        for (int i = 0; i < sequence.length; i++) {
-            lastPos = sequence.length - i - 1;
-            for (int j = 0; j < sequence.length - i; j++) {
-                if (sequence[j] > maxVal) {
-                    maxVal = sequence[j];
-                    maxPos = j;
+        for (int i = 0; i < sequence.length - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < sequence.length; j++) {
+                if (sequence[j] < sequence[minIndex]) {
+                    minIndex = j;
                 }
             }
-            tmp = sequence[maxPos];
-            sequence[maxPos] = sequence[lastPos];
-            sequence[lastPos] = tmp;
+            int tmp = sequence[minIndex];
+            sequence[minIndex] = sequence[i];
+            sequence[i] = tmp;
         }
-        System.out.println("after " + Arrays.toString(sequence));
     }
-
 }
