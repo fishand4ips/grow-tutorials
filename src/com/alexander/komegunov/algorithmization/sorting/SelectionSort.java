@@ -21,14 +21,14 @@ public class SelectionSort {
 
     static void sort(int[] sequence) {
         for (int i = 0; i < sequence.length - 1; i++) {
-            int minIndex = i;
+            int maxIndex = i;
             for (int j = i + 1; j < sequence.length; j++) {
-                if (sequence[j] < sequence[minIndex]) {
-                    minIndex = j;
+                if (sequence[j] > sequence[maxIndex]) {
+                    maxIndex = j;
                 }
             }
-            int tmp = sequence[minIndex];
-            sequence[minIndex] = sequence[i];
+            int tmp = sequence[maxIndex];
+            sequence[maxIndex] = sequence[i];
             sequence[i] = tmp;
         }
     }
