@@ -1,8 +1,6 @@
 package com.alexander.komegunov.algorithmization.sorting;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.Stream;
+import java.util.Timer;
 
 /**
  * 1. Выбираем опорный элемент из массива. Как правило, это средний элемент.
@@ -11,36 +9,72 @@ import java.util.stream.Stream;
  */
 
 public class QuickSort {
-
-    static void sort(Integer[] a) {
-        ArrayList<Integer> less = new ArrayList<>();
-        ArrayList<Integer> greater = new ArrayList<>();
-        if (a.length < 2) {
-            System.out.println(Arrays.toString(a));
-        }
-        int peson = a[0];
-        for (Integer integer : a) {
-            if (integer <= peson) {
-                less.add(integer);
-            }
-            if (integer > peson) {
-                greater.add(integer);
-            }
-        }
-        Integer[] arrayLess = new Integer[less.size()];
-        arrayLess = less.toArray(arrayLess);
-        Integer[] arrayGreater = new Integer[greater.size()];
-        arrayGreater = greater.toArray(arrayGreater);
-        sort(arrayLess);
-        sort(arrayGreater);
-
-        Integer[] union = Stream.concat(Arrays.stream(arrayLess), Arrays.stream(arrayGreater))
-                .toArray(Integer[]::new);
-        System.out.println(Arrays.toString(union));
-    }
+    private int[] numbers;
 
     public static void main(String[] args) {
-        sort(new Integer[]{9, 4, 4, 51, 2, 3, 4});
+        int[] ints = new int[]{1, 6, 3, 2, 4, 6, 7, 5, 3};
+        QuickSort quick = new QuickSort();
+        quick.print(ints);
+        quick.leadTime(ints);
     }
 
+    public void print(int[] numbers) {
+        System.out.print("before: ");
+        for (int number : numbers) {
+            System.out.print(number);
+        }
+        System.out.println();
+        sort(numbers);
+        System.out.print("after: ");
+        for (int number : numbers) {
+            System.out.print(number);
+        }
+    }
+
+    private void leadTime(int[] numbers) {
+        long start = System.nanoTime();
+        sort(numbers);
+        long finish = System.nanoTime();
+        long timeConsumedMillis = finish - start;
+        System.out.println("\n" + "times: " + timeConsumedMillis + "нс");
+    }
+
+    private void sort(int[] a) {
+        if (a == null || a.length == 0) {
+            return;
+        }
+        this.numbers = a;
+        int number = a.length;
+        quickSort(0, number - 1);
+    }
+
+    private void quickSort(int low, int high) {
+        int i = low, j = high;
+        int pivot = numbers[low + (high - low) / 2]; // выбор опорного элемента
+        while (i <= j) {
+            while (numbers[i] < pivot) { // элементы меньше опорного
+                i++;
+            }
+            while (numbers[j] > pivot) { // элементы больше опорного
+                j--;
+            }
+            if (i <= j) {
+                swap(i, j);
+                i++;
+                j--;
+            }
+        }
+        if (low < j)
+            quickSort(low, j);
+        if (i < high)
+            quickSort(i, high);
+    }
+
+    private void swap(int i, int j) {
+        int temp = numbers[i];
+        numbers[i] = numbers[j];
+        numbers[j] = temp;
+    }
 }
+
+
