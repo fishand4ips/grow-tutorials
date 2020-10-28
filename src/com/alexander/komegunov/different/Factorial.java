@@ -3,7 +3,6 @@ package com.alexander.komegunov.different;
 import javax.swing.*;
 
 public class Factorial {
-
     /**
      * Checking correct operation
      * @param args
