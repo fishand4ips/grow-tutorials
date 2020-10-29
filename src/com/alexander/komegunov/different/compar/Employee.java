@@ -8,10 +8,12 @@ package com.alexander.komegunov.different.compar;
 public class Employee implements Comparable<Employee> {
     private final String name;
     private final int age;
+    private final PositionsEmployees position;
 
-    public Employee(String name, int age) {
+    public Employee(String name, int age, PositionsEmployees position) {
         this.name = name;
         this.age = age;
+        this.position = position;
     }
 
     public String getName() {
@@ -20,6 +22,10 @@ public class Employee implements Comparable<Employee> {
 
     public int getAge() {
         return age;
+    }
+
+    public PositionsEmployees getPosition() {
+        return position;
     }
 
     @Override
@@ -32,6 +38,7 @@ public class Employee implements Comparable<Employee> {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", position=" + position +
                 '}';
     }
 }
