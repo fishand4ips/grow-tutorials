@@ -1,4 +1,4 @@
-package com.alexander.komegunov.algorithmization.sorting;
+package com.alexander.komegunov.sorting;
 
 /**
  * 1. Выбираем опорный элемент из массива. Как правило, это средний элемент.

@@ -1,4 +1,4 @@
-package com.alexander.komegunov.algorithmization.sorting;
+package com.alexander.komegunov.sorting;
 
 import java.util.Arrays;
 

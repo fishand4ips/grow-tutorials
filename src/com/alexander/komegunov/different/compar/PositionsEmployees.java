@@ -22,4 +22,5 @@ public enum PositionsEmployees {
     public int getSize() {
         return size;
     }
+
 }
